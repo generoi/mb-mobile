@@ -1,0 +1,203 @@
+/** Style */
+
+
+
+/* Media Queries
+?????????????????????????????????????????????????? */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+.carDisplayWrapper {
+  max-width: 696px;
+}
+
+/* Banner */
+.carDisplayBanner {
+
+
+}
+
+.carDisplayBanner-content {
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+
+}
+
+.carDisplayBanner-text {
+  background-color: #f7f7f7;
+  width: 65%;
+  margin: 0;
+  padding: 0px;
+  float: left;
+  padding: 20px;
+}
+.carDisplayBanner-textFooter {
+  flex: 1;
+  widtH: 25%;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.carDisplayBanner-quote {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 0;
+}
+
+.carDisplayBanner-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.carDisplayBanner-button {
+  background-color: #2D90FA;
+  color: white;
+  text-transform: uppercase;
+  text-align:center;
+  padding: 15px 20px;
+  font-size:20px;
+  border-radius: 30px;
+  text-align: center;
+
+  margin-left: 0;
+  white-space: nowrap;
+
+  position: relative;
+  top: 30px;
+
+  box-shadow: -2px -1.5px #cdcdcd;
+  transition: all 0.3s ease-in;
+}
+.carDisplayBanner-button:hover {
+  text-decoration: none;
+  box-shadow: none;
+  color: white;
+  background-color: black;
+  cursor: hand;
+}
+.carDisplayBanner-button:visited {
+  color: white;
+}
+
+/* The Cars */
+
+.carDisplay {
+  margin: 10px 0;
+  clear: both;
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+}
+
+.carDisplay > div {
+  margin-right: 2%;
+}
+
+.carDisplay-text {
+  background-color: #f7f7f7;
+  width: 49%;
+  margin: 0;
+  padding: 0px;
+  float: left;
+  flex: 1;
+}
+
+.carDisplay-text h2 {
+  margin: 0;
+  padding: 10px 20px 5px 20px;
+  background-color: black;
+  color: white;
+}
+
+.carDisplay-text p {
+  padding: 20px;
+}
+
+.carDisplay-textFooter {
+  padding: 0 20px 20px 20px;
+  height: 40px;
+}
+
+.carDisplay-price {
+  width: 50%;
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin:0;
+}
+
+a.carDisplay-button {
+  background-color: #2D90FA;
+  color: white;
+  text-transform: uppercase;
+  text-align:center;
+  padding: 15px 19px 15px 15px;
+  font-size:15px;
+  border-radius: 30px;
+  max-width: 30%;
+  float: right;
+  margin:0;
+  white-space: nowrap;
+  transition: all 0.3s ease-in;
+}
+a.carDisplay-button:visited, a.carDisplay-button:link {
+  color: white;
+}
+
+.carDisplay-image {
+  width: 49%;
+  margin: 0;
+  float: right;
+  height: 245px;
+  overflow-y: hidden;
+  flex: 1;
+
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+a.carDisplay-button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  cursor: hand;
+
+}
