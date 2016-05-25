@@ -14,4 +14,23 @@ function loadjscssfile(filename, filetype){
         document.getElementsByTagName("head")[0].appendChild(fileref)
 }
 
-loadjscssfile("assets/style.css", "css");
+var cdnUrlBase = 'https://cdn.rawgit.com/generoi/mb-mobile/';
+var devUrlBase = 'https://rawgit.com/generoi/mb-mobile/';
+var urlBase = devUrlBase;
+var useCDN = false;
+var url2 = "";
+
+var url = window.location + '';
+//url = 'https://rawgit.com/generoi/mb-mobile/94aa1a4b1404aa2b406e784a5cff170deb36c37a/js/cardisplay.js';
+if (url.indexOf(cdnUrlBase) == 0) {
+  useCDN = true;
+  urlBase = cdnUrlBase;
+}
+
+var re = /.*generoi\/mb-mobile\/(.*?)\//i;
+var found = url.match(re);
+var hash = found[1];
+var cssUrl = urlBase+hash+'/css/cardisplay.css';
+
+loadjscssfile(cssUrl, "css");
+
