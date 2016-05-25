@@ -104,7 +104,7 @@ there.
   background-color: black;
   cursor: hand;
 }
-.carDisplayBanner-button:visited {
+a.carDisplayBanner-button:visited, a.carDisplayBanner-button:visited {
   color: white;
 }
 
