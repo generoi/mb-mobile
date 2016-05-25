@@ -31,6 +31,10 @@ if (url.indexOf(cdnUrlBase) == 0) {
 var re = /.*generoi\/mb-mobile\/(.*?)\//i;
 var found = url.match(re);
 var hash = found[1];
+if (hash == 'master)
+  urlBase = devUrlBase
+
+
 var cssUrl = urlBase+hash+'/css/cardisplay.css';
 
 loadjscssfile(cssUrl, "css");
