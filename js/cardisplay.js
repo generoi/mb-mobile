@@ -20,7 +20,8 @@ var urlBase = devUrlBase;
 var useCDN = false;
 var url2 = "";
 
-var url = window.location + '';
+var url = document.getElementById('cardDisplayAssets').src;
+
 //url = 'https://rawgit.com/generoi/mb-mobile/94aa1a4b1404aa2b406e784a5cff170deb36c37a/js/cardisplay.js';
 if (url.indexOf(cdnUrlBase) == 0) {
   useCDN = true;
