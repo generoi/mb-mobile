@@ -163,6 +163,11 @@ a.carDisplayBanner-button:visited, a.carDisplayBanner-button:visited {
   margin:0;
 }
 
+.carDisplay-price:after {
+  content: '€';
+}
+
+
 a.carDisplay-button {
   background-color: #2D90FA;
   color: white;
